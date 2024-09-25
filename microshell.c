@@ -68,7 +68,7 @@ int main(int argc, char **argv, char **env)
 				status = cd(argv, i);
 			else if (i) 
 				status = execut(argv, env, i);
-			argv+=1;
+			argv+=i;
 		}
 	}
 	return (status);
